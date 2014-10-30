@@ -138,7 +138,7 @@ int main() {
     
     *ans = -1;
 
-    printf("\nOnly globalname:\n");
+    printf("\nOnly global mem:\n");
     recursiveAddReduction(deva, ans, elementCnt, [] (int blocksPerGrid, int threadsPerBlock, int *a, int *res, int elCnt) -> void
 		{
 			reductionByAdd<<<blocksPerGrid, threadsPerBlock>>>(a, res, elCnt);
